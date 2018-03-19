@@ -1,7 +1,13 @@
+import React from 'react';
+import {shallow} from 'enzyme';
+
 import App from './app';
 
 describe('<App />', () => {
-    it('Should renderer without crashing');
+    it('Should renderer without crashing', () => {
+        shallow(<App />);
+    });
+
     it('Should render the items in the todo list');
     it('Should add an item when the form is submitted');
 });
